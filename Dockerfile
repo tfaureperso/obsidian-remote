@@ -24,12 +24,12 @@ RUN \
         /tmp/*
 
 # set version label
-ARG OBSIDIAN_VERSION=0.13.31
+ARG OBSIDIAN_VERSION=0.14.15
 
 RUN \
     echo "**** download obsidian ****" && \
         curl \
-        https://github.com/obsidianmd/obsidian-releases/releases/download/v$OBSIDIAN_VERSION/Obsidian-$OBSIDIAN_VERSION.AppImage \
+        https://github.com/obsidianmd/obsidian-releases/releases/download/v$OBSIDIAN_VERSION/Obsidian-$OBSIDIAN_VERSION-arm64.AppImage \
         -L \
         -o obsidian.AppImage
 
