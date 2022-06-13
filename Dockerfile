@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-rdesktop-web:focal
+FROM ghcr.io/linuxserver/baseimage-rdesktop-web:arm64v8-0.0.2-ls28
 
 LABEL org.opencontainers.image.authors="github@sytone.com"
 LABEL org.opencontainers.image.source="https://github.com/sytone/obsidian-remote"
