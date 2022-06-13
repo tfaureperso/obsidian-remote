@@ -15,7 +15,10 @@ RUN \
             libnss3 \
             # Install Chrome dependencies.
             dbus-x11 \
-            uuid-runtime && \
+            uuid-runtime \
+            # obsidian.AppImage: error while loading shared libraries: libz.so: cannot open shared object file: No such file or directory
+            #  https://github.com/AppImage/AppImageKit/issues/964 for solution
+            zlib1g-dev && \
     echo "**** cleanup ****" && \
         apt-get autoclean && \
         rm -rf \
