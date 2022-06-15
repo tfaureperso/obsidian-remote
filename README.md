@@ -1,5 +1,23 @@
 # obsidian-remote
 
+//begin comment
+
+This is a fork of the initial repository from [sytone](https://github.com/sytone/obsidian-remote)
+
+I do some small adaptation to run it on an arm64 architecture (in my case a Raspberry pi 4)
+
+* architecture as begin adaded from the base image : 
+* and zlib1g-dev need talso to be added
+
+* building instruction : docker build -t obsidian-remote_arm64 .struction
+* running instruction : docker run -d -v /mnt/disk_ssd/data/obsidian/vaults:/vaults -v /mnt/disk_ssd/data/obsidian/config:/config -p 8989:8080 obsidian-remote_arm64  # I specify another port (because default port is allready in use) and some personal local path for persitance data
+
+
+
+//end comment
+
+
+
 This docker image allows you to run obsidian in docker as a container and access it via your web browser.
 
 Use `http://localhost:8080/` to access it locally, do not expose this to the web unless you secure it and know what you are doing!!
