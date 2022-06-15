@@ -11,6 +11,7 @@ I do some small adaptation to run it on an arm64 architecture (in my case a Rasp
 
 * building instruction : docker build -t obsidian-remote_arm64 .struction
 * running instruction : docker run -d -v /mnt/disk_ssd/data/obsidian/vaults:/vaults -v /mnt/disk_ssd/data/obsidian/config:/config -p 8989:8080 obsidian-remote_arm64  # I specify another port (because default port is allready in use) and some personal local path for persitance data
+* acces via [http://localhost:8989](http://localhost:8989/)
 
 
 
